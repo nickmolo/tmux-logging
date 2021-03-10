@@ -18,6 +18,11 @@ default_clear_history_key="M-c" # Alt-c
 clear_history_key=$(tmux show-option -gqv "@clear-history-key")
 clear_history_key=${clear_history_key:-$default_clear_history_key}
 
+
+default_check_logging_key="M-H" # Alt-H
+check_logging_key=$(tmux show-option -gqv "@check_logging_key")
+check_logging_key=${check_logging_key:-$default_check_logging_key}
+
 # General options
 filename_suffix="#{session_name}-#{window_index}-#{pane_index}-%Y%m%dT%H%M%S.log"
 
