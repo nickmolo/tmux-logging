@@ -8,7 +8,7 @@ source "$CURRENT_DIR/shared.sh"
 
 # returns a string unique to current pane
 pane_unique_id() {
-	tmux display-message -p "#{session_name}_#{window_index}_#{pane_index}"
+	tmux display-message -p "#{session_name}_#{window_index}_#{window_name}_#{pane_index}"
 }
 
 # this function checks if logging is happening for the current pane
