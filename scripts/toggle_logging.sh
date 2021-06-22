@@ -19,7 +19,7 @@ stop_pipe_pane() {
 
 # returns a string unique to current pane
 pane_unique_id() {
-	tmux display-message -p "#{session_name}_#{window_index}_#{pane_index}"
+	tmux display-message -p "#{session_name}_#{window_index}_#{window_name}_#{pane_index}"
 }
 
 # saving 'logging' 'not logging' status in a variable unique to pane
